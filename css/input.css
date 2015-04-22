@@ -1,0 +1,200 @@
+/* @override 
+	http://dhz-base/wp-content/plugins/acf-css_margin_padding/css/input.css?ver=4.2-RC2-32230
+	http://dhz-base/wp-content/plugins/acf-css_margin_padding/css/input.css?ver=4.2-RC3-32249
+	http://dhz-base/wp-content/plugins/acf-css_margin_padding/css/input.css?ver=4.2-RC3-32258 */
+
+.acf-css-layout-margin {
+	float: left;
+	margin: 15px 25px 15px 0;
+}
+
+.acf-border-settings {
+	float: left;
+	width: 400px;
+	margin: 15px 15px 0 0;
+}
+
+.acf-container-css_layout .acf-css-layout-margin {
+	position: relative;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 440px;
+	height: 286px;
+    border: 1px dashed #a6a6a6;
+    box-sizing: border-box;
+}
+
+.acf-css-layout-border {
+	position: relative;
+	top: 5px;
+	margin: 0 auto;
+    padding: 10px 3px;
+	width: 326px;
+	height: 218px;
+	box-sizing: border-box;
+}
+
+.acf-css-layout-padding {
+	position: relative;
+	top: 9px;
+	margin: 0 auto;
+    padding: 10px 3px;
+	width: 209px;
+	height: 142px;
+    border: 1px dashed #9c9c9c;
+    box-sizing: border-box;
+}
+
+.acf-css-layout-center {
+	position: relative;
+	top: 8px;
+	margin: 0 auto;
+	width: 96px;
+	height: 66px;
+    border: none;
+	left: 0;
+}
+
+.acf-field .acf-container-css_layout .acf-css-layout-margin input[type="text"] {
+	position: absolute;
+    width: 50px;
+    text-align: center;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.acf-field .acf-container-css_layout  input[type="text"][class*="-right"],
+.acf-field .acf-container-css_layout  input[type="text"][class*="-left"] {
+	top: 50%;
+	margin-top: -15px;
+}
+
+.acf-field .acf-container-css_layout  input[type="text"][class*="-top"],
+.acf-field .acf-container-css_layout  input[type="text"][class*="-bottom"] {
+	left: 50%;
+	margin-left: -20px;
+}
+
+.acf-field .acf-container-css_layout  input[type="text"][class*="-right"] {
+	right: 4px;
+}
+
+.acf-field .acf-container-css_layout  input[type="text"][class*="-left"] {
+	left: 4px;
+}
+
+.acf-field .acf-container-css_layout  input[type="text"][class*="-top"] {
+	top: 2px;
+}
+
+.acf-field .acf-container-css_layout  input[type="text"][class*="-bottom"] {
+	bottom: 2px;
+}
+
+.acf-field .acf-container-css_layout .acf-css-layout-border  input[type="text"][class*="-top"] {
+	top: 6px;
+}
+
+.acf-field .acf-container-css_layout .acf-css-layout-border  input[type="text"][class*="-bottom"] {
+	bottom: 5px;
+}
+
+.acf-field .acf-container-css_layout .acf-css-layout-padding  input[type="text"][class*="-top"] {
+	top: 6px;
+}
+
+.acf-field .acf-container-css_layout .acf-css-layout-padding  input[type="text"][class*="-bottom"] {
+	bottom: 6px;
+}
+
+.acf-css-checkall {
+	font-size: 16px;
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+	cursor: pointer;
+	color: #eee;
+	background: #ccc;
+	border-radius: 50%
+}
+
+.acf-css-checkall.checked {
+	color: #00a0d2;
+}
+
+.acf-css-border-settings {
+	margin-bottom: 33px;
+}
+
+.acf-css-border-settings.acf-css-back-color-settings,
+.acf-css-border-settings.acf-css-text-color-settings {
+	float: left;
+	margin-right: 15px;	
+}
+
+.acf-border-settings label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.acf-container-css_layout .border-style {
+	width: 115px;
+}
+
+.acf-container-css_layout .left_col,
+.acf-container-css_layout .right_col {
+	float: left;
+	width: 100px;
+}
+
+.acf-container-css_layout .left_col div,
+.acf-container-css_layout .right_col div {
+	margin-bottom: 10px;
+}
+
+.acf-field .acf-container-css_layout .acf-border-settings input[type="text"][class*="acf-css-border-radius"] {
+	position: relative;	
+    width: 50px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.acf-container-css_layout .wp-color-picker {
+	float: left;
+}
+
+.acf-container-css_layout .acf-css-info {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	color: #ccc;
+}
+
+.acf-container-css_layout .acf-css-info:hover {
+	cursor: pointer;
+	color: #00a0d2;
+}
+
+.acf-container-css_layout .infotext {
+	display: none;
+}
+
+.acf-container-css_layout .infotext p {
+	margin: 0;
+	padding: 5px 0 0 0 ;
+}
+
+@media (min-width: 480px) and (max-width: 1199px) {
+	.acf-margin-settings {
+		float: none;
+	}
+	
+	.acf-border-settings {
+		float: none;
+	}
+}
