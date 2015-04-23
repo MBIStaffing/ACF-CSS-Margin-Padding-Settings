@@ -17,7 +17,7 @@ The field content is stored in an array. In this array you will get all values f
 ```
 Array (
 	[margin] => 40px 0px 40px 0px
-	[border] => 2px
+	[border] => 2px solid #3876a5
 	[padding] => 10px 10px 10px 10px
 	[border-radius] => 10px 10px 10px 10px
 	[margin-top] => 40px
