@@ -133,7 +133,7 @@ class acf_field_css_margin_padding extends acf_field {
 	function render_field( $field ) {
 
 		$dir = plugin_dir_url( __FILE__ );
-		
+
 		/*
 		*  Review the data of $field.
 		*  This will show what data is available
@@ -162,7 +162,7 @@ class acf_field_css_margin_padding extends acf_field {
 			$field['value']['margin-bottom']				= "0px";
 			$field['value']['margin-left']					= "0px";
 			
-			$field['value']['border']						= "0px 0px 0px 0px";
+			$field['value']['border']						= "none";
 			$field['value']['border-top']					= "0px";
 			$field['value']['border-right']					= "0px";
 			$field['value']['border-bottom']				= "0px";
@@ -182,7 +182,7 @@ class acf_field_css_margin_padding extends acf_field {
 
 			$field['value']['border-style']					= 'none';
 			
-			$field['value']['border-radius']				= "0px 0px 0px 0px";
+			$field['value']['border-radius']				= "0px";
 			$field['value']['border-top-left-radius']		= "0px";
 			$field['value']['border-top-right-radius']		= "0px";
 			$field['value']['border-bottom-right-radius']	= "0px";
@@ -464,6 +464,30 @@ class acf_field_css_margin_padding extends acf_field {
 		
 		
 	}
+
+	/*
+	*  update_field()
+	*
+	*  This filter is applied to the $field before it is saved to the database
+	*
+	*  @type	filter
+	*  @date	23/01/2013
+	*  @since	3.6.0
+	*
+	*  @param	$field (array) the field array holding all the field options
+	*  @return	$field
+	*/
+	
+	
+	
+	function update_value( $value, $post_id, $field ) {
+		
+		$value['border'] = $value['border-top'] . ' ' . $value['border-style'] . ' ' . $value['border-color'];
+
+		return $value;
+		
+	}	
+	
 	
 }
 
