@@ -8,32 +8,6 @@ With the ACF – CSS Margin & Padding Settings you will get one field where you 
 So you have the possibilities to set CSS style in an options page or for an element on a page/post. Everything in one dialog - no more cluttered settings with a lot of fields for every value.
 
 
-### Installation
-
-This add-on can be treated as both a WP plugin and a theme include.
-
-**Install as Plugin**
-
-1. Copy the 'acf-relationship-multisite' folder into your plugins folder
-2. Activate the plugin via the Plugins admin page
-
-**Include within theme**
-
-1.	Copy the 'acf-relationship-multisite' folder into your theme folder (can use sub folders). You can place the folder anywhere inside the 'wp-content' directory
-2.	Edit your functions.php file and add the code below (Make sure the path is correct to include the acf-date_time_picker.php file)
-
-```php
-add_action('acf/register_fields', 'my_register_fields');
-
-function my_register_fields()
-{
-	include_once('acf-relationship-multisite/acf-relationship-multisite.php');
-}
-```
-
-**This plugin needs the installation/activation of Advanced Custom Fields V5**
-
-
 ### Description
 
 **Usage**
@@ -87,12 +61,12 @@ This add-on can be treated as both a WP plugin and a theme include.
 
 **Install as Plugin**
 
-1. Copy the 'acf-relationship-multisite' folder into your plugins folder
+1. Copy the 'acf-css_margin_padding' folder into your plugins folder
 2. Activate the plugin via the Plugins admin page
 
 **Include within theme**
 
-1.	Copy the 'acf-relationship-multisite' folder into your theme folder (can use sub folders). You can place the folder anywhere inside the 'wp-content' directory
+1.	Copy the 'acf-css_margin_padding' folder into your theme folder (can use sub folders). You can place the folder anywhere inside the 'wp-content' directory
 2.	Edit your functions.php file and add the code below (Make sure the path is correct to include the acf-date_time_picker.php file)
 
 ```php
@@ -100,9 +74,11 @@ add_action('acf/register_fields', 'my_register_fields');
 
 function my_register_fields()
 {
-	include_once('acf-relationship-multisite/acf-relationship-multisite.php');
+	include_once('acf-css_margin_padding/acf-css_margin_padding.php');
 }
 ```
+
+**This plugin needs the installation/activation of Advanced Custom Fields V5**
 
 
 ### Compatibility
