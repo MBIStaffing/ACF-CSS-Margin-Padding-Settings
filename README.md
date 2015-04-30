@@ -88,5 +88,8 @@ This version works only with ACF 5.
 
 ### Changelog
 
+**1.0.1**
+* Make the preview work correctly on Repeater/Flexible Content Fields 
+
 **1.0.0**
 * First release
