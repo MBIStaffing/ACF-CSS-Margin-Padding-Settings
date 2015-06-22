@@ -4,7 +4,7 @@
 Plugin Name: Advanced Custom Fields: CSS Margin & Padding Settings
 Plugin URI: dreihochzwo.de
 Description: Adds an Advanced Custom Field field to setup CSS values for margins, paddings and borders. This plugin needs the installation/activation of Advanced Custom Fields V5.
-Version: 1.0.1
+Version: 1.0.2
 Author: Thomas Meyer
 Author URI: dreihochzwo.de
 License: GPLv2 or later

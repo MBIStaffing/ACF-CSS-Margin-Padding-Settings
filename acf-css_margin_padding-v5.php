@@ -139,7 +139,7 @@ class acf_field_css_margin_padding extends acf_field {
 		*  This will show what data is available
 		*/
 		// convert value to array
-		$field['value'] = acf_force_type_array($field['value']);
+		$field['value'] = dhz_get_array($field['value']);
 
 		$fieldname = str_replace(
 			array(
@@ -512,6 +512,37 @@ class acf_field_css_margin_padding extends acf_field {
 		
 	}	
 	
+	
+}
+
+function dhz_get_array( $var = false, $delimiter = ',' ) {
+	
+	// is array?
+	if( is_array($var) ) {
+	
+		return $var;
+	
+	}
+	
+	
+	// bail early if empty
+	if( empty($var) && !is_numeric($var) ) {
+		
+		return array();
+		
+	}
+	
+	
+	// string 
+	if( is_string($var) && $delimiter ) {
+		
+		return explode($delimiter, $var);
+		
+	}
+	
+	
+	// place in array
+	return array( $var );
 	
 }
 
